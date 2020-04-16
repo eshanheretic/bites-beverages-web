@@ -8,8 +8,7 @@ class Navbar extends React.Component {
       <div className="navbar-main">
         <header>
           <div className="container">
-            <h1 className="logo">Bites 'N Beverages </h1>
-
+            <img src="bitesbeve.png" className="logo" alt="logo" />
             <nav>
               <ul>
                 <li>
@@ -19,11 +18,12 @@ class Navbar extends React.Component {
                   <a href="#">About</a>
                 </li>
                 <li>
-                  <a href="#">Pricing</a>
+                  <a href="#">Login</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#">Cart</a>
                 </li>
+
               </ul>
             </nav>
           </div>

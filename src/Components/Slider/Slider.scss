@@ -4,6 +4,8 @@
     width: 50em;
     background-size: cover;
     background-image: url("../../assets/images/home-panel-11-1-1.jpg");
+    background-blend-mode: lighten;
+    background-color: rgba(255,255,255,0.4);
     height: 25em;
     margin: 0 auto;
     padding: 0;
@@ -42,3 +44,8 @@
     margin: none;
   }
 }
+@media only screen and (max-width: 700px) {
+  .slider-main {
+  display: none;
+   }
+ }

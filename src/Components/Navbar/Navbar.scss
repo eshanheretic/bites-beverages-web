@@ -1,19 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 .navbar-main {
   body {
     margin: 0;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
   }
 
   .container {
     width: 80%;
     margin: 0 auto;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
   }
 
   header {
-    background: #55d6aa;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    font-family: "Lato", sans-serif;
   }
 
   header::after {
@@ -24,7 +26,6 @@
 
   .logo {
     float: left;
-    padding: 10px 0;
   }
 
   nav {
@@ -32,9 +33,10 @@
   }
 
   nav ul {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     list-style: none;
+    font-family: "Open Sans", sans-serif;
   }
 
   nav li {
@@ -46,7 +48,7 @@
   }
 
   nav a {
-    color: #444;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -54,13 +56,14 @@
 
   nav a:hover {
     color: #000;
+    font-weight: 600;
   }
 
   nav a::before {
     content: "";
     display: block;
     height: 5px;
-    background-color: #444;
+    background-color: rgb(73, 7, 7);
 
     position: absolute;
     top: 0;
@@ -68,8 +71,20 @@
 
     transition: all ease-in-out 250ms;
   }
-
+  .logo{
+    background-image: url("bitesbeve.png");
+    width: 150px;
+    height: 100px;
+    margin:10px 10px;
+  }
   nav a:hover::before {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+ .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
