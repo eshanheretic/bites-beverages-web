@@ -10,8 +10,8 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Navbar />
-        {/* <Slider /> */}
-        <Login />
+        <Slider />
+        {/* <Login /> */}
       </React.Fragment>
     );
   }
