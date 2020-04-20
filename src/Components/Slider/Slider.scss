@@ -2,13 +2,18 @@
   .container1 {
     text-align: center;
     width: 50em;
-    background-size: cover;
+    position: relative;
+    top:5em;
+    // background-size: cover;
     background-image: url("../../assets/images/home-panel-11-1-1.jpg");
     background-blend-mode: lighten;
     background-color: rgba(255,255,255,0.4);
     height: 25em;
     margin: 0 auto;
     padding: 0;
+    border:2px solid black;
+    border-radius: 5px;
+    margin-top: 1em;
   }
   body,
   html {
@@ -19,7 +24,7 @@
   .neo {
     border: none;
     background-color: none;
-    color: #ffdd1b;
+    color: #ff501b;
     font-size: 3em;
     padding: 0;
     z-index: 1;
@@ -40,12 +45,25 @@
         0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
     }
   }
-  p {
+  button {
     margin: none;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color: Transparent;
   }
 }
 @media only screen and (max-width: 700px) {
-  .slider-main {
-  display: none;
+  .slider-main 
+  {
+    .container1 {
+    width:25em;
+    border:2px solid black;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: all 1s;
    }
+   .container1:hover{
+     transform: scale(1.03);
+   }
+  }
  }
