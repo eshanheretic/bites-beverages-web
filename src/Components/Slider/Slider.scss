@@ -1,69 +1,26 @@
-.slider-main {
-  .container1 {
-    text-align: center;
-    width: 50em;
+.Carousel{
     position: relative;
-    top:5em;
-    // background-size: cover;
-    background-image: url("../../assets/images/home-panel-11-1-1.jpg");
-    background-blend-mode: lighten;
-    background-color: rgba(255,255,255,0.4);
-    height: 25em;
-    margin: 0 auto;
-    padding: 0;
-    border:2px solid black;
-    border-radius: 5px;
-    margin-top: 1em;
-  }
-  body,
-  html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .neo {
-    border: none;
-    background-color: none;
-    color: #ff501b;
-    font-size: 3em;
-    padding: 0;
-    z-index: 1;
-    margin: auto auto;
-  }
-  .neo:hover {
-    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon3 1.5s ease-in-out infinite alternate;
-    animation: neon3 1.5s ease-in-out infinite alternate;
-  }
-  @keyframes neon3 {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
-        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
-        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
-    }
-  }
-  button {
-    margin: none;
-    border:1px solid rgb(0, 0, 0);
-    border-radius: 2px;
-    background-color: Transparent;
-  }
+    top:100px;
 }
-@media only screen and (max-width: 700px) {
-  .slider-main 
-  {
-    .container1 {
-    width:25em;
-    border:2px solid black;
-    border-radius: 5px;
-    margin-top: 1em;
-    transition: all 1s;
-   }
-   .container1:hover{
-     transform: scale(1.03);
-   }
-  }
- }
+.Carousel img{
+    height: 60vh;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+@media screen and (max-width:600px){
+    .Carousel img{
+        height: 70vh;
+        width: 89%;
+        border-radius: 10px;
+        border: 2px solid red;
+    }
+}
+@media screen and (max-width:1024px){
+    .Carousel img{
+        height: 60vh;
+        width: 90%;
+        border-radius: 10px;
+        border: 2px solid red;
+    }
+}

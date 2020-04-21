@@ -4,22 +4,23 @@
   body {
     margin: 0;
     font-family: "Baloo Bhaina 2", cursive;
-    background-color: #bbb;
+    background-color: black;
   }
 
   a {
-    color: #000;
+    color: white;
   }
 
   /* header */
 
   .header {
-    background-color: #f7b42c;
-    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    background-color: black;
+    
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 3;
+    color: white;
   }
 
   .header ul {
@@ -27,21 +28,21 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #f7b42c;
-    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    background-color: black;
+    
   }
 
   .header li a {
     display: block;
     padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
+    background-color: black;
     text-decoration: none;
     
   }
 
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #6b0f1a;
+    background-color: rgb(88, 82, 82);
   }
 
   .header .logo {
@@ -60,8 +61,8 @@
     max-height: 0;
     transition: max-height 0.2s ease-out;
     font-family: "Baloo Bhaina 2", cursive;
-    background-color: #f7b42c;
-    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    background-color: black;
+   
   }
 
   /* menu icon */
@@ -86,7 +87,7 @@
 
   .header .menu-icon .nav-icon:before,
   .header .menu-icon .nav-icon:after {
-    background: #333;
+    background:white;
     content: "";
     display: block;
     height: 100%;
