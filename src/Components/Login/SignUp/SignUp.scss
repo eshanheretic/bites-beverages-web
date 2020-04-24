@@ -1,0 +1,35 @@
+.sign-up {
+  .form-box {
+    box-shadow: none;
+  }
+
+  .login-btn {
+    width: 60% !important;
+  }
+
+  .name-field {
+    width: 170px;
+  }
+
+  .border-radius-zero {
+    border-radius: 0 !important;
+  }
+
+  .flex-and-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-element-container {
+    padding-bottom: 5px;
+    box-shadow: 0 0 10px #0000ff57;
+    border-radius: 7px;
+  }
+
+  @media (max-width: 425px) {
+    .name-field {
+      width: 100%;
+    }
+  }
+}

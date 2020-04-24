@@ -1,0 +1,16 @@
+@import "../../../CSS/media-queries.scss";
+
+.sign-in {
+  .social-login,
+  .create-account {
+    font-size: 14px;
+  }
+}
+
+@include mobile-landscape {
+  .login {
+    .sign-in .welcome-back {
+      color: white;
+    }
+  }
+}

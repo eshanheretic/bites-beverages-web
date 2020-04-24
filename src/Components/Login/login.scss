@@ -1,3 +1,5 @@
+@import "../../CSS/media-queries.scss";
+
 .login {
   flex: 2;
 
@@ -6,7 +8,7 @@
   }
 
   .login-main {
-    max-width: 400px;
+    max-width: 350px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -32,6 +34,14 @@
   .form-box {
     border-radius: 7px;
     box-shadow: 0 0 10px #0000ff57;
+
+    div:first-of-type input:first-of-type {
+      border-radius: 7px 7px 0 0;
+    }
+
+    div:last-of-type input {
+      border-radius: 0 0 7px 7px;
+    }
   }
 
   .form-element-container {
@@ -47,20 +57,12 @@
       font-family: cursive;
     }
 
-    .form-element.email {
-      border-radius: 7px 7px 0 0;
-    }
-
-    .form-element.pass {
-      border-radius: 0 0 7px 7px;
-    }
-
     .form-element:focus {
       border: 1px solid rgb(35, 131, 255);
     }
   }
 
-  .form-element-container.focus {
+  .form-element-container:focus-within {
     color: rgb(35, 131, 255);
   }
 
@@ -71,15 +73,10 @@
   }
 
   .icon {
-    position: absolute;
     height: 20px;
     width: 20px;
+    position: absolute;
     margin: 12px 10px;
-  }
-
-  .social-login,
-  .create-account {
-    font-size: 14px;
   }
 
   .cooking-image img {
@@ -87,15 +84,20 @@
   }
 }
 
-// All mobile potrait
-@media (max-width: 567.98px) {
+@include mobile-potrait {
   .login {
     background-image: linear-gradient(to bottom, #f3f1ff, #d1ceed, #bbb5f0);
   }
 }
 
-// No mobile potrait. For Mobile landscape and larger devics
-@media (min-width: 568px) {
+@include mobile-landscape {
+  .login {
+    background-image: url(../../assets/images/circle-food.jpg);
+    background-position: center;
+  }
+}
+
+@include large-devices-and-mobile-landscape {
   .login {
     background-image: url(../../assets/images/circle-food-cropped.jpg);
     background-repeat: no-repeat;
@@ -104,18 +106,6 @@
 
     .cooking-image {
       display: none;
-    }
-  }
-}
-
-// Mobile landscape
-@media (orientation: landscape) and (max-height: 567.98px) {
-  .login {
-    background-image: url(../../assets/images/circle-food.jpg);
-    background-position: center;
-
-    .welcome-back {
-      color: white;
     }
   }
 }
