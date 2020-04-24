@@ -1,5 +1,6 @@
 import React from "react";
 import { useFormik } from "formik";
+import { NavLink } from "react-router-dom";
 
 import cookingImage from "../../../assets/images/cooking.png";
 import "./SignUp.scss";
@@ -96,7 +97,9 @@ const SignUp = () => {
 
       <div>
         <span>Already Registered? </span>
-        <strong>Log In</strong>
+        <strong>
+          <NavLink to="/login">Log In</NavLink>
+        </strong>
       </div>
 
       <div className="cooking-image">

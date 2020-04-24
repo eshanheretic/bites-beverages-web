@@ -1,20 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 
 import SignIn from "./SignIn/SignIn";
 import SignUp from "./SignUp/SignUp";
 import "./Login.scss";
 
-export default class Login extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <div className="login">
-          <div className="login-main">
-            <SignIn />
-            {/* <SignUp /> */}
-          </div>
+const Login = (props) => {
+  return (
+    <React.Fragment>
+      <div className="login">
+        <div className="login-main">
+          {props.showSignIn == "true" ? <SignIn /> : <SignUp />}
         </div>
-      </React.Fragment>
-    );
-  }
-}
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default Login;

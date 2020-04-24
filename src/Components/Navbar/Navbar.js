@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./Navbar.scss";
 
@@ -7,20 +8,22 @@ class Navbar extends React.Component {
     return (
       <div className="navbar-main">
         <header className="header clearfix">
-          <h1 className="logo">Bites 'N Beverages</h1>
+          <h1 className="logo">
+            <NavLink to="/home">Bites 'N Beverages</NavLink>
+          </h1>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn">
             <span className="nav-icon"></span>
           </label>
           <ul className="menu">
             <li>
-              <a href="#log">Login</a>
+              <NavLink to="/login">Login</NavLink>
             </li>
             <li>
-              <a href="#about">About</a>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <a href="#cart">Cart</a>
+              <NavLink to="/cart">Cart</NavLink>
             </li>
           </ul>
         </header>

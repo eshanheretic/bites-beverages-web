@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 import cookingImage from "../../../assets/images/cooking.png";
 import "./SignIn.scss";
@@ -125,7 +126,9 @@ export default class SignIn extends Component {
 
           <div className="create-account">
             <span>Don't have an account? </span>
-            <strong>Register</strong>
+            <strong>
+              <NavLink to="/signup">Register</NavLink>
+            </strong>
           </div>
         </div>
 
