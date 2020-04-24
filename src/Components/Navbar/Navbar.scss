@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Dancing+Script:wght@600;700&display=swap");
 .navbar-main {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
   body {
     margin: 0;
     font-family: "Baloo Bhaina 2", cursive;
@@ -15,11 +19,11 @@
 
   .header {
     background-color: black;
-    
+
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-    position: fixed;
+    // position: fixed;
     width: 100%;
-    z-index: 3;
+    // z-index: 3;
     color: white;
   }
 
@@ -29,7 +33,6 @@
     list-style: none;
     overflow: hidden;
     background-color: black;
-    
   }
 
   .header li a {
@@ -37,7 +40,6 @@
     padding: 20px 20px;
     background-color: black;
     text-decoration: none;
-    
   }
 
   .header li a:hover,
@@ -51,7 +53,7 @@
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
   }
 
   /* menu */
@@ -62,7 +64,6 @@
     transition: max-height 0.2s ease-out;
     font-family: "Baloo Bhaina 2", cursive;
     background-color: black;
-   
   }
 
   /* menu icon */
@@ -73,7 +74,6 @@
     padding: 28px 20px;
     position: relative;
     user-select: none;
-    
   }
 
   .header .menu-icon .nav-icon {
@@ -87,7 +87,7 @@
 
   .header .menu-icon .nav-icon:before,
   .header .menu-icon .nav-icon:after {
-    background:white;
+    background: white;
     content: "";
     display: block;
     height: 100%;
