@@ -1,0 +1,28 @@
+.Carousel {
+    position: relative;
+    // top:100px;
+    top: 50px;
+    background-color: rgb(24, 18, 32);
+  }
+  .Carousel img {
+    height: 60vh;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid red;
+  }
+  @media screen and (max-width: 600px) {
+    .Carousel img {
+      height: 70vh;
+      width: 89%;
+      border-radius: 10px;
+      border: 2px solid red;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .Carousel img {
+      height: 60vh;
+      width: 90%;
+      border-radius: 10px;
+      border: 2px solid red;
+    }
+  }
