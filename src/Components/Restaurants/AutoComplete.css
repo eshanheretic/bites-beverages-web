@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+.AutoComplete-main {
+  display: block;
+  box-sizing: border-box;
+  margin: auto auto;
+  padding: 120px;
+  width: 100%;
+  font-family: 'Manrope', sans-serif;
+}
+.AutoComplete-main input {
+  box-shadow: 10px 10px 22px 5px rgba(245,120,245,1);
+  width: 100%;
+  text-align: center;
+  border: 1px solid grey;
+}
+.AutoComplete-main ul {
+  padding: none;
+  text-align: left;
+}
+.AutoComplete-main li {
+  list-style: none;
+  margin: none;
+  cursor: pointer;
+}
+
+.AutoComplete-main ul li:hover {
+  border: 1px ridge #A4A4A4;
+}
