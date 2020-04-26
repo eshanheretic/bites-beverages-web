@@ -1,0 +1,24 @@
+$mobile-potrait-max-width: 567.98px;
+$mobile-landscape-max-height: 567.95px;
+$large-device-min-width: 568px;
+
+// All mobile potrait
+@mixin mobile-potrait {
+  @media (max-width: $mobile-potrait-max-width) {
+    @content;
+  }
+}
+
+// Mobile landscape
+@mixin mobile-landscape {
+  @media (orientation: landscape) and (max-height: $mobile-landscape-max-height) {
+    @content;
+  }
+}
+
+// Large devices plus Mobile landscape
+@mixin large-devices-and-mobile-landscape {
+  @media (min-width: $large-device-min-width) {
+    @content;
+  }
+}
