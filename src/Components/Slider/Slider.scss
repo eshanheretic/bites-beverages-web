@@ -1,14 +1,17 @@
 .Carousel {
     position: relative;
-    // top:100px;
     top: 50px;
-    background-color: rgb(24, 18, 32);
+    background-color: rgb(39, 38, 41);
   }
   .Carousel img {
-    height: 60vh;
-    width: 50%;
+    margin: 10px;
+    height: 50vh;
+    width: 90%;
     border-radius: 10px;
     border: 2px solid red;
+  }
+  .active{
+    transform: scale(1.1);
   }
   @media screen and (max-width: 600px) {
     .Carousel img {

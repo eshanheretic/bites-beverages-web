@@ -43,7 +43,7 @@ class AutoComplete extends Component {
     render() {
         return (
             <div className="AutoComplete-main">
-                <input value={this.state.value} onChange={this.onChangeInput} />
+                <input value={this.state.value} placeholder="Enter your city/locality" onChange={this.onChangeInput} />
                 {this.returnSugges()}
             </div>
         );
