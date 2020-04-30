@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Slider from "./Components/Slider/Slider";
 import Login from "./Components/Login/Login";
 import AutoComplete from "./Components/Restaurants/AutoComplete";
+import Footer from "./Components/Footer/Footer";
 import "./App.scss";
 
 import Places from "./Components/Restaurants/Places";
@@ -22,7 +23,14 @@ class App extends React.Component {
             path="/signup"
             render={(props) => <Login showSignIn="false" {...props} />}
           />
-          <Route path="/home" render={(props) =><> <Slider {...props} /> <AutoComplete items={Places}/></>} />
+          <Route path="/home" 
+          render={(props) =>
+          <> <Slider {...props} /> 
+            
+          <AutoComplete items={Places} {...props}/>
+
+          <Footer {...props}/>
+          </>} />
           <Redirect to="/home"></Redirect>
         </Switch>
         

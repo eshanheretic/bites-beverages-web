@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './AutoComplete.css'
+import Restaurants from './Restaurants';
 
 class AutoComplete extends Component {
     constructor(props) {
@@ -17,34 +18,41 @@ class AutoComplete extends Component {
             const regex = new RegExp(`^${value}`, 'i');
             suggestions = items.sort().filter(v => regex.test(v));
         }
-        this.setState(()=> ({ value}));
-        this.setState(()=>({suggestions}));
+        this.setState(() => ({ value }));
+        this.setState(() => ({ suggestions }));
 
     }
-    takesugges=(val)=>{
-        this.setState(()=>({
-            value:val,
-            suggestions:[]
+    takesugges = (val) => {
+        this.setState(() => ({
+            value: val,
+            suggestions: []
         }))
     }
-    returnSugges()
-    {
-        const{suggestions}=this.state;
-        if(suggestions.length===0)
-        return null;
-        return(
+    returnSugges() {
+        const { suggestions } = this.state;
+        if (suggestions.length === 0)
+            return null;
+        return (
             <ul>
-                {suggestions.map((item)=>
-                 <li onClick={()=> this.takesugges(item)}>{item}</li>
-                 )}
+                {suggestions.map((item, i) =>
+                    <li key={parseInt(i)} onClick={() => this.takesugges(item)}>{item}</li>
+                )}
             </ul>
         );
     }
     render() {
+        const {value}=this.state;
         return (
+          
             <div className="AutoComplete-main">
-                <input value={this.state.value} placeholder="Enter your city/locality" onChange={this.onChangeInput} />
+                <input value={this.state.value}
+                    placeholder="Enter your city/locality"
+                    onChange={this.onChangeInput} />
+                    <p>{value}</p>
                 {this.returnSugges()}
+                <div className='restaurants'>
+                <Restaurants/>
+                </div>
             </div>
         );
     }
