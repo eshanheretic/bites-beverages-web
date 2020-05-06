@@ -25,6 +25,10 @@ class Slider extends React.Component {
           autoPlay={4000}
           animationSpeed={2000}
           breakpoints={{
+            400:{
+              slidesPerPage:1,
+              arrows:false
+            },
             640: {
               slidesPerPage: 1,
               arrows: false,

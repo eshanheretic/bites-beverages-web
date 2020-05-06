@@ -1,55 +1,37 @@
 import React, { Component } from "react";
-import Card from 'react-bootstrap/Card'
-import CardGroup from 'react-bootstrap/CardGroup'
+import './Restaurants.scss';
+import Card from './Card';
 class Restaurants extends Component {
+    constructor() {
+        super();
+        this.state = {
+            restaurants: [{
+                name: 'Great Marathi Restaurant',
+                description: 'The best Of Maharashtra\'s street food, order now to enjoy'
+            },
+            {
+                name: 'Bengal\'s delights special',
+                description: 'The best Of Bengal\'s street food, order now to enjoy'
+            },
+            {
+                name: 'Delhi\'s Streets Foods',
+                description: 'The best Of Delhi\'s street food, order now to enjoy'
+            },
+            {
+                name: 'South Indian Restaurant',
+                description: 'The best Of South Indian street food, order now to enjoy'
+            }
+            ]
+        }
+    }
     render() {
+        const { restaurants } = this.state
         return (
             <div className='res-cards'>
-                <CardGroup>
+                {restaurants.map((item) => <Card name={item.name}
+                    description={item.description}
+                />)}
 
-                    <Card>
-                        <Card.Img variant="top"
-                         src="https://www.madhurasrecipe.com/media/Marathi-Recipe-Thali-1.jpg" />
-                        <Card.Body>
-                            <Card.Title>Amchi Bhojan</Card.Title>
-                            <Card.Text>
-                                This Restaurant speacializes in traditional Marathi food as well as the famous 
-                                Mumbai street food.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button class="btn  btn-outline-dark">Order Now!</button>
-                        </Card.Footer>
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top"
-                         src="https://www.madhurasrecipe.com/media/Marathi-Recipe-Thali-1.jpg" />
-                        <Card.Body>
-                            <Card.Title>Amchi Bhojan</Card.Title>
-                            <Card.Text>
-                                This Restaurant speacializes in traditional Marathi food as well as the famous 
-                                Mumbai street food.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button class="btn  btn-outline-dark">Order Now!</button>
-                        </Card.Footer>
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top"
-                         src="https://www.madhurasrecipe.com/media/Marathi-Recipe-Thali-1.jpg" />
-                        <Card.Body>
-                            <Card.Title>Amchi Bhojan</Card.Title>
-                            <Card.Text>
-                                This Restaurant speacializes in traditional Marathi food as well as the famous 
-                                Mumbai street food.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button class="btn  btn-outline-dark">Order Now!</button>
-                        </Card.Footer>
-                    </Card>
-                </CardGroup>
             </div>
         )
     }

@@ -1,0 +1,12 @@
+.res-cards{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    
+  }
+@media screen and (min-width:800px){
+        .res-cards{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+  }

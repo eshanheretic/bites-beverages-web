@@ -3,10 +3,12 @@
 .AutoComplete-main {
   display: block;
   box-sizing: border-box;
-  margin: auto auto;
-  padding: 120px;
+  padding: 60px;
   width: 100%;
   font-family: "Manrope", sans-serif;
+  background-image: linear-gradient(to right top, #6898e1, #4382e7, #1c69ea, #004de8, #2028e1);
+  background-repeat: no-repeat;
+  background-size: cover !important;
 }
 .AutoComplete-main input {
   -webkit-box-shadow: 1px 3px 6px 0px rgba(106, 83, 133, 0.81);
