@@ -6,6 +6,7 @@ import Slider from "./Components/Slider/Slider";
 import Login from "./Components/Login/Login";
 import AutoComplete from "./Components/Restaurants/AutoComplete";
 import Footer from "./Components/Footer/Footer";
+import Cart from "./Components/Cart/Cart";
 import "./App.scss";
 
 import Places from "./Components/Restaurants/Places";
@@ -31,6 +32,10 @@ class App extends React.Component {
 
           <Footer {...props}/>
           </>} />
+          <Route
+            path="/cart"
+            render={(props) => <Cart {...props} />}
+          />
           <Redirect to="/home"></Redirect>
         </Switch>
         

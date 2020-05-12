@@ -95,7 +95,9 @@
     transition: all 0.2s ease-out;
     width: 100%;
   }
-
+  .cart{
+    display: flex;
+  }
   .header .menu-icon .nav-icon:before {
     top: 5px;
   }

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './Card.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Card=({name, description})=>{

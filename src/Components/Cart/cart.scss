@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Dancing+Script:wght@600;700&display=swap");
+.cart {
+  background-color: rgb(199, 183, 183);
+  padding: 2%;
+  font-family: "Baloo Bhaina 2", cursive;
+  .prod-card {
+    display: flex;
+    margin-top: 2%;
+    padding: 5%;
+    width: 100%;
+    background-color: rgb(245, 237, 237) !important;
+    .delete {
+      float: right;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    name {
+      min-width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .modify {
+      margin-left: auto;
+      padding: auto auto;
+    }
+    i {
+      margin: 0 2px;
+      transition: all ease-out 500ms;
+    }
+    i:hover {
+      transform: scale(1.2);
+    }
+  }
+  .total {
+    padding: 2%;
+    display: flex;
+    h2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .sub {
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cart {
+    .prod-card {
+      padding: 1%;
+    }
+  }
+}
