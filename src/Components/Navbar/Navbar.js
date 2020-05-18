@@ -17,14 +17,17 @@ class Navbar extends React.Component {
           </label>
           <ul className="menu">
             <li>
-              <NavLink to="/login"><i class="fas fa-sign-in-alt"></i> Login</NavLink>
+              <NavLink to="/login">
+                <i className="fas fa-sign-in-alt"></i> Login
+              </NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-
-              <NavLink to="/cart"><i class="fas fa-shopping-cart"></i> Cart</NavLink>
+              <NavLink to="/cart">
+                <i className="fas fa-shopping-cart"></i> Cart
+              </NavLink>
             </li>
           </ul>
         </header>

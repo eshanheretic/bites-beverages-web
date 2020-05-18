@@ -1,0 +1,24 @@
+.restaurant-info-main {
+  .restaurant-info-body {
+    padding: 5px 15px;
+    line-height: 1.2;
+    flex-wrap: nowrap;
+    font-family: initial;
+    background: linear-gradient(azure, transparent);
+  }
+
+  .restaurant-heading {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .restaurant-desc {
+    font-size: 0.75rem;
+    color: darkslategrey;
+  }
+
+  .restaurant-address {
+    font-size: 0.62rem;
+    color: grey;
+  }
+}

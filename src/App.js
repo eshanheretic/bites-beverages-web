@@ -10,12 +10,14 @@ import Cart from "./Components/Cart/Cart";
 import "./App.scss";
 
 import Places from "./Components/Restaurants/Places";
+import FoodMenu from "./Components/FoodMenu/FoodMenu";
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
         <Navbar />
         <Switch>
+          <Route path="/menu" render={(props) => <FoodMenu {...props} />} />
           <Route
             path="/login"
             render={(props) => <Login showSignIn="true" {...props} />}
@@ -24,21 +26,20 @@ class App extends React.Component {
             path="/signup"
             render={(props) => <Login showSignIn="false" {...props} />}
           />
-          <Route path="/home" 
-          render={(props) =>
-          <> <Slider {...props} /> 
-            
-          <AutoComplete items={Places} {...props}/>
-
-          <Footer {...props}/>
-          </>} />
           <Route
-            path="/cart"
-            render={(props) => <Cart {...props} />}
+            path="/home"
+            render={(props) => (
+              <>
+                {" "}
+                <Slider {...props} />
+                <AutoComplete items={Places} {...props} />
+                <Footer {...props} />
+              </>
+            )}
           />
+          <Route path="/cart" render={(props) => <Cart {...props} />} />
           <Redirect to="/home"></Redirect>
         </Switch>
-        
       </React.Fragment>
     );
   }

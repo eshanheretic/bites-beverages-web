@@ -21,3 +21,38 @@ body,
   display: flex;
   flex-flow: column;
 }
+
+.btn:focus {
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex !important;
+  flex-flow: row wrap;
+}
+
+.flex-col {
+  display: flex !important;
+  flex-flow: column wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-1 {
+  flex: 1;
+}

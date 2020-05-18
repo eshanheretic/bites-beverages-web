@@ -1,0 +1,68 @@
+.food-menu-main {
+  // max-in: 0 auto;
+  padding: 5px 15px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .menu-card-main.flex-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .menu-card {
+      width: calc((100vw - 45px) / 2);
+      max-width: 235px;
+    }
+
+    .menu-card-header {
+      height: calc((100vw - 40px) / 3.2);
+      max-height: 180px;
+    }
+  }
+
+  .menu-card {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 2px 0px,
+      rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+    margin-bottom: 10px;
+  }
+
+  .menu-card-header {
+    width: 100%;
+  }
+
+  .food-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .menu-card-body {
+    padding: 5px;
+  }
+
+  .line-height-1 {
+    line-height: 1;
+  }
+
+  .food-name {
+    font-family: monospace;
+    font-weight: 600;
+  }
+
+  .food-desc {
+    color: grey;
+    font-size: 0.75rem;
+  }
+
+  .menu-card-footer {
+    padding: 0px 5px 5px 5px;
+    font-family: initial;
+  }
+
+  .menu-card-price {
+    color: darkslategrey;
+    font-size: 0.75rem;
+  }
+}

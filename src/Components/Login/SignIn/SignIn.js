@@ -5,8 +5,8 @@ import cookingImage from "../../../assets/images/cooking.png";
 import "./SignIn.scss";
 
 export default class SignIn extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       email: {
         value: "",

@@ -9,7 +9,7 @@ const Login = (props) => {
     <React.Fragment>
       <div className="login">
         <div className="login-main">
-          {props.showSignIn == "true" ? <SignIn /> : <SignUp />}
+          {props.showSignIn === "true" ? <SignIn /> : <SignUp />}
         </div>
       </div>
     </React.Fragment>
