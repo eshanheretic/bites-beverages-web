@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/bites-beverages-web/static/css/main.8cc471ad.chunk.css",
+    "main.js": "/bites-beverages-web/static/js/main.69ee5c96.chunk.js",
+    "main.js.map": "/bites-beverages-web/static/js/main.69ee5c96.chunk.js.map",
+    "runtime-main.js": "/bites-beverages-web/static/js/runtime-main.1d4cf9bd.js",
+    "runtime-main.js.map": "/bites-beverages-web/static/js/runtime-main.1d4cf9bd.js.map",
+    "static/css/2.64c6657a.chunk.css": "/bites-beverages-web/static/css/2.64c6657a.chunk.css",
+    "static/js/2.38814cc2.chunk.js": "/bites-beverages-web/static/js/2.38814cc2.chunk.js",
+    "static/js/2.38814cc2.chunk.js.map": "/bites-beverages-web/static/js/2.38814cc2.chunk.js.map",
+    "index.html": "/bites-beverages-web/index.html",
+    "precache-manifest.203f1da6750dd30bcb2fefac4d0a3004.js": "/bites-beverages-web/precache-manifest.203f1da6750dd30bcb2fefac4d0a3004.js",
+    "service-worker.js": "/bites-beverages-web/service-worker.js",
+    "static/css/2.64c6657a.chunk.css.map": "/bites-beverages-web/static/css/2.64c6657a.chunk.css.map",
+    "static/css/main.8cc471ad.chunk.css.map": "/bites-beverages-web/static/css/main.8cc471ad.chunk.css.map",
+    "static/js/2.38814cc2.chunk.js.LICENSE.txt": "/bites-beverages-web/static/js/2.38814cc2.chunk.js.LICENSE.txt",
+    "static/media/circle-food-cropped.jpg": "/bites-beverages-web/static/media/circle-food-cropped.763746e5.jpg",
+    "static/media/circle-food.jpg": "/bites-beverages-web/static/media/circle-food.b1a5166a.jpg",
+    "static/media/cooking.png": "/bites-beverages-web/static/media/cooking.c2198a24.png",
+    "static/media/font-awesome.min.css": "/bites-beverages-web/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/food10.jpg": "/bites-beverages-web/static/media/food10.02e8fab6.jpg",
+    "static/media/food11.jpg": "/bites-beverages-web/static/media/food11.476a1352.jpg",
+    "static/media/food13.jpg": "/bites-beverages-web/static/media/food13.a2093d5d.jpg",
+    "static/media/food6.jpg": "/bites-beverages-web/static/media/food6.4461fa6d.jpg",
+    "static/media/food7.jpg": "/bites-beverages-web/static/media/food7.0db40641.jpg",
+    "static/media/food8.jpg": "/bites-beverages-web/static/media/food8.bcf7a61f.jpg",
+    "static/media/home-panel-11-1-1.jpg": "/bites-beverages-web/static/media/home-panel-11-1-1.a88d88e6.jpg",
+    "static/media/left-food.jpg": "/bites-beverages-web/static/media/left-food.2c6d5b07.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d4cf9bd.js",
+    "static/css/2.64c6657a.chunk.css",
+    "static/js/2.38814cc2.chunk.js",
+    "static/css/main.8cc471ad.chunk.css",
+    "static/js/main.69ee5c96.chunk.js"
+  ]
+}
