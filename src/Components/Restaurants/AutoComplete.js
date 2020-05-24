@@ -45,16 +45,17 @@ class AutoComplete extends Component {
         return (
 
             <div className="AutoComplete-main">
+            <div className="autocom">
                 <div className='auto'>                <input value={this.state.value}
                     placeholder="Enter your city/locality"
                     onChange={this.onChangeInput} />
 
-                </div>
+            </div>
                 {this.returnSugges()}
-
+                </div>
                 {value.length !== 0 && suggestions.length === 0 ? <div className='restaurants'>
                     <Restaurants />
-                </div> : <div>Loading....</div>}
+                </div> : <div></div>}
 
             </div>
         );

@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
 
 .AutoComplete-main {
-
-  box-sizing: border-box;
   padding: 60px;
   width: 100%;
   font-family: "Manrope", sans-serif;
-  background-image: linear-gradient(to right top, #6898e1, #4382e7, #1c69ea, #004de8, #2028e1);
+  /* background-image: linear-gradient(to right top, #6898e1, #4382e7, #1c69ea, #004de8, #2028e1); */
   background-repeat: no-repeat;
   background-size: cover !important;
 }
@@ -15,20 +13,31 @@
   -moz-box-shadow: 1px 3px 6px 0px rgba(106, 83, 133, 0.81);
   box-shadow: 1px 3px 6px 0px rgba(106, 83, 133, 0.81);
   width: 100%;
-    
   text-align: center;
+  box-sizing: border-box;
   border: 1px solid grey;
 }
 .AutoComplete-main ul {
-  padding: none;
-  text-align: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+}
+.AutoComplete-main ul::before{
+  content:"";
 }
 .AutoComplete-main li {
-  list-style: none;
-  margin: none;
+  margin: 0;
   cursor: pointer;
 }
 
 .AutoComplete-main ul li:hover {
   border: 1px ridge #a4a4a4;
+  background-color: #a4a4a4;
 }
+/* .AutoComplete-main .autocom{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+} */
